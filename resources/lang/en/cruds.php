@@ -158,8 +158,8 @@ return [
         ],
     ],
     'parentMenu' => [
-        'title'          => 'Parent Menu Child',
-        'title_singular' => 'Parent Menu Child',
+        'title'          => 'Parent Menu Child 2',
+        'title_singular' => 'Parent Menu Child 2',
     ],
 
 ];

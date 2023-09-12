@@ -112,30 +112,6 @@
                     </ul>
                 </li>
             @endcan
-            @can('parent_menu_access')
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa-fw fas fa-ambulance">
-
-                        </i>
-                        <span>{{ trans('cruds.parentMenu.title') }}</span>
-                        <span class="pull-right-container"><i class="fa fa-fw fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        @can('student_access')
-                            <li class="{{ request()->is("admin/students") || request()->is("admin/students/*") ? "active" : "" }}">
-                                <a href="{{ route("admin.students.index") }}">
-                                    <i class="fa-fw fas fa-cogs">
-
-                                    </i>
-                                    <span>{{ trans('cruds.student.title') }}</span>
-
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
-            @endcan
             @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
                 @can('profile_password_edit')
                     <li class="{{ request()->is('profile/password') || request()->is('profile/password/*') ? 'active' : '' }}">

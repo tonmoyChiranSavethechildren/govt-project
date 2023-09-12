@@ -161,5 +161,21 @@ return [
         'title'          => 'Parent Menu Child 2',
         'title_singular' => 'Parent Menu Child 2',
     ],
+    'student' => [
+        'title'          => 'Student',
+        'title_singular' => 'Student',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => ' ',
+            'emails'            => 'Emails',
+            'emails_helper'     => ' ',
+            'created_at'        => 'Created at',
+            'created_at_helper' => ' ',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => ' ',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => ' ',
+        ],
+    ],
 
 ];
